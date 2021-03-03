@@ -1,0 +1,318 @@
+@font-face {
+    font-family: "OpenSans-Light";
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    src: local("OpenSans-Light"), url(./assets/fonts/OpenSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "GochiHand-Regular";
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    src: local("GochiHand-Regular"), url(./assets/fonts/GochiHand-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-Medium";
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    src: local("MontserratAlternates-Medium"), url(./assets/fonts/MontserratAlternates-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-SemiBold";
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    src: local("MontserratAlternates-SemiBold"), url(./assets/fonts/MontserratAlternates-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-Regular";
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    src: local("MontserratAlternates-Regular"), url(./assets/fonts/MontserratAlternates-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-Bold";
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    src: local("MontserratAlternates-Bold"), url(./assets/fonts/MontserratAlternates-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-Italic";
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    src: local("MontserratAlternates-Italic"), url(./assets/fonts/MontserratAlternates-Bold.ttf) format("truetype");
+}
+
+.montserrat {
+    font-family: "MontserratAlternates-Regular", Arial, Helvetica, sans-serif;
+}
+
+strong,
+.strong {
+    font-family: "MontserratAlternates-Bold", Arial, Helvetica, sans-serif;
+}
+
+emm,
+.italic {
+    font-family: "MontserratAlternates-Italic", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.h3 {
+    font-family: "GochiHand-Regular", Arial, Helvetica, sans-serif;
+}
+
+.semibold {
+    font-family: "MontserratAlternates-SemiBold", Arial, Helvetica, sans-serif;
+}
+
+.regular,
+li {
+    font-family: "MontserratAlternates-Regular", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "MontserratAlternates-Regular", Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 1700px) {
+    .container {
+        max-width: 1550px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .container {
+        max-width: 1450px;
+    }
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+/*background-color: #F9CBD6;*/
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    background: #FCFFDF;
+}
+
+.carousel-control-next-icon {
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    background-image: url(./assets/icons/next-icon.png);
+}
+
+.carousel-control-prev-icon {
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    background-image: url(./assets/icons/prev-icon.png);
+}
+
+.carousel-indicators {
+    list-style: none;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    background-image: url(./assets/icons/carousel-icon-cat.png);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: relative;
+    margin: 10px;
+}
+
+.carousel-indicators img {
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.carousel-dark .carousel-indicators li {
+    background-color: transparent;
+}
+
+.bg-anime {
+    background-color: #E79DAF;
+}
+
+.bg-anime-secondary {
+    background-color: #d8fffd;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    transform: color;
+}
+
+.card a:hover {
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    transform: color;
+}
+
+
+/*GLOBAL*/
+
+
+/*HEADER*/
+
+.navbar li {
+    font-size: 1rem;
+}
+
+.navbar {
+    color: black;
+}
+
+.dropdown-item {
+    background: transparent;
+}
+
+.navbar-nav.main .nav-item {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+.navbar-nav.main .nav-item:hover {
+    background-color: white;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+.navbar-nav.main .nav-item a {
+    color: white;
+}
+
+.navbar-nav.main .nav-item:hover a {
+    color: #f1aabb;
+}
+
+.info {
+    color: black;
+    text-decoration: none;
+}
+
+.secondary a,
+.secondary span {
+    color: rgb(119, 119, 119);
+    font-size: 0.84rem;
+}
+
+
+/*HEADER*/
+
+.nav-link {
+    color: gray;
+}
+
+.bg-anime {
+    background-color: #E79DAF;
+}
+
+
+/*RECOMENDADOS*/
+
+.btn-primary {
+    background-color: #ecafbd;
+}
+
+.btn-primary:hover {
+    background-color: #d894a4;
+}
+
+
+/*RECOMENDADOS*/
+
+.bg-gray {
+    background-color: #e9ecef;
+}
+
+.seccion-01 {
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    background-image: url(./assets/img/1920x1480-2.png);
+}
+
+.seccion-02 {
+    /* //////////////////////////////////////////////////////////////////AQUI METESTU RUTA*/
+    background-image: url(./assets/img/carousel-background.png);
+}
+
+.btn-anime {
+    background-color: #ecafb2;
+    color: white;
+}
+
+.btn-anime:hover {
+    background-color: #d894a4;
+    color: white;
+}
+
+.btn-anime-delete {
+    background-color: #f09a9e;
+    color: white;
+}
+
+.btn-anime-delete:hover {
+    background-color: #ce7e82;
+    color: white;
+}
+
+.titulo-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-mobile {
+        display: inline-block;
+    }
+    thead {
+        display: none;
+    }
+    .table>:not(caption)>*>* {
+        border-bottom-width: 0px !important;
+    }
+    .card .card-img-top {
+        max-width: 125px;
+        max-height: 125px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card .card-img-top {
+        max-width: 125px;
+        max-height: 125px;
+    }
+}

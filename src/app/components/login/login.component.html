@@ -1,0 +1,63 @@
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+    <div class="modal-dialog">
+        <div *ngIf="bandera==0" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLogin">Acceder</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input #email type="email" class="form-control" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input #password type="password" class="form-control">
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#registro" data-dismiss="modal">Registrarte</button>
+                <button (click)="login(email.value,password.value); $event.preventDefault();" type="button" class="btn btn-anime text-white" data-dismiss="modal">Ingresar</button>
+            </div>
+        </div>
+        <div *ngIf="bandera==1" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="miCuenta">Mi Cuenta</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="d-flex justify-content-center align-items-center my-4">
+                    <!--Aca metes la imagen-->
+                    <img src="https://image.shutterstock.com/image-vector/cute-cartoon-white-kitten-horn-260nw-1411196531.jpg" class="rounded-circle" width="150" alt="">
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 text-center">
+                        <span class="h3">{{info.Username}}</span>
+                    </div>
+                </div>
+                <div class="offset-1 col-10">
+                    <span class="h3">Email: </span> {{info.email}}
+                </div>
+                <div class="offset-1 col-10">
+                    <span class="h3">Telefono: </span> {{info.telefono}}
+                </div>
+                <div class="offset-1 col-10">
+                    <span class="h3">Dirección: </span> {{info.direccion}}
+                </div>
+                <div class="offset-1 col-10">
+                    <span class="h3">C.P: </span> {{info.cp}}
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button (click)="logout(); $event.preventDefault();" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Sesion</button>
+                <button type="button" class="btn btn-anime text-white" data-dismiss="modal" data-toggle="modal" data-target="#editarCuenta">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>

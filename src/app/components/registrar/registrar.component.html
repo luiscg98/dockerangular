@@ -1,0 +1,31 @@
+<div class="modal fade" id="registro" tabindex="-1" aria-labelledby="registro" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registro">Registate</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nombre de Usuario</label>
+                        <input #Username1 type="text" class="form-control" aria-describedby="nombreUser">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input #email1 type="email" class="form-control" aria-describedby="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input #password1 type="password" class="form-control">
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button (click)="registro(Username1.value,email1.value,password1.value); $event.preventDefault();" type="button" class="btn btn-secondary" data-dismiss="modal">Registrame</button>
+            </div>
+        </div>
+    </div>
+</div>

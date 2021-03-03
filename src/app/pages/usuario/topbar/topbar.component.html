@@ -1,0 +1,72 @@
+<!--Navbar header-->
+<header class="shadow-sm">
+    <nav class="bg-anime-secondary py-2 secondary">
+        <div class="container">
+            <ul class="nav bg-anime-secondary d-flex align-items-center regular">
+                <li class="nav-item d-flex align-items-center mr-auto">
+                    <span>NUESTRO TELEFONO:</span>
+                    <a href="tel:4775304611" class="info ml-2">477 530 4611</a>
+                </li>
+
+                <li class="nav-item ml-md-auto">
+                    <a class="nav-link" type="button" data-toggle="modal" data-toggle="modal" data-target="#login">
+                        <fa-icon class="hvr-icon" [icon]="faUser"></fa-icon>
+                        <span class="ml-2">Mi Cuenta</span>
+                    </a>
+                </li>
+                <li class="nav-item border-left">
+                    <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-anime py-0">
+        <div class="container">
+
+
+            <a [routerLink]="['home']" class="navbar-brand">
+                <img src="./assets/img/logo.png" alt=""><img/>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul *ngFor="let item of categorias" class="navbar-nav mx-auto mb-0 main">
+                    <li class="nav-item py-3">
+                        <a [routerLink]="item.url" class="nav-link SemiBold" role="button" aria-expanded="false">
+                            {{item.nombre}}
+                        </a>
+                    </li>
+                </ul>
+
+
+                <ul class="navbar-nav ml-0 ml-lg-4 mb-2 mb-lg-0">
+                    <li class="nav-item mx-0 mx-lg-1 d-none d-lg-block">
+                        <a class="nav-link">
+                            <div class="text-white">
+                                <fa-icon class="hvr-icon" [icon]="faHeart"></fa-icon>
+                            </div>
+                        </a>
+                    </li>
+                    <li *ngIf="rol=='USER_ROLE'" class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link" type="button" data-toggle="modal" data-target="#carrito" href="#">
+                            <div class="text-white">
+                                <fa-icon class="hvr-icon" [icon]="faShoppingCart"></fa-icon>
+                                <span class="ml-2 cantidad-productos">0</span> / $<span class="total-costo">0.00
+                                    MXN</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li *ngIf="rol=='ADMIN_ROLE'" class="nav-item mx-0 mx-lg-1">
+                        <a [routerLink]="['../admin/productos']" class="nav-link SemiBold" role="button" aria-expanded="false">
+                          Pagina Administrador
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--Navbar Header-->

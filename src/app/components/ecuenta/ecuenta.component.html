@@ -1,0 +1,29 @@
+<div class="modal fade" id="editarCuenta" tabindex="-1" aria-labelledby="miCuenta" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="miCuenta">Mi Cuenta</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                        <input #numero type="number" class="form-control" aria-describedby="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Dirección</label>
+                        <input #direccion type="string" class="form-control" aria-describedby="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">C.P.</label>
+                        <input #cp type="number" class="form-control" aria-describedby="email">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button (click)="guardar(numero.value,direccion.value,cp.value); $event.preventDefault()" type="button" class="btn btn-anime text-white" data-dismiss="modal" data-toggle="modal" data-toggle="modal" data-target="#login">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

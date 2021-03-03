@@ -1,0 +1,38 @@
+<div class="modal fade" id="mostrarusuario" tabindex="-1" aria-labelledby="modalLogin" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="miCuenta">Cuenta usuario</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="d-flex justify-content-center align-items-center my-4">
+                    <!--Aca metes la imagen-->
+                    <img src="https://image.shutterstock.com/image-vector/cute-cartoon-white-kitten-horn-260nw-1411196531.jpg" class="rounded-circle" width="150" alt="">
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 text-center">
+                        <span class="h3">{{info.Username}}</span>
+                    </div>
+                </div>
+                <div class="offset-1 col-10">
+                    <span class="h3">Email: </span> {{info.email}}
+                </div>
+                <div class="offset-1 col-10">
+                    <span class="h3">Telefono: </span> {{info.telefono}}
+                </div>
+                <div class="offset-1 col-10">
+                    <span class="h3">Dirección: </span> {{info.direccion}}
+                </div>
+                <div class="offset-1 col-10">
+                    <span class="h3">C.P: </span> {{info.cp}}
+                </div>
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>

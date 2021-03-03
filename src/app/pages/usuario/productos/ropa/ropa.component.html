@@ -1,0 +1,29 @@
+<div class="container">
+    <div *ngIf="bandera==1" class="row row-cols-1 row-cols-md-3 row-cols-xl-5">
+        <div *ngFor="let item of productos" class="col p-2">
+            <div class="card shadow-sm d-flex flex-row flex-md-column">
+                <img src="https://nekonokokoroapi.herokuapp.com/images/productos/{{item.img}}" class="card-img-top" style="height: 200px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.nombre}}</h5>
+
+                    <div class="row my-2">
+                        <div class="col-6 col-md-7"><span class="precio">${{item.precioUni}}.00 MXN</span></div>
+                        <div class="col-6 col-md-5 text-center">Quedan: <span class="stock">
+                              {{item.stocks}}</span></div>
+                    </div>
+
+                    <p class="card-text">{{item.descripcion}}</p>
+
+                    <div *ngIf="botones==1" class="d-flex flex-md-row justify-content-around g-2">
+                        <a (click)="buy(item._id,item.precioUni)" class="btn btn-anime text-white btn-sm">Ordenar <i class="fas fa-money-bill-wave-alt ml-2"></i> </a>
+                        <a (click)="carrito(item._id)" class="btn btn-success text-white btn-sm">Agregar <i class="fas fa-shopping-basket ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div *ngIf="bandera==0">
+        <h5>NO HAY PRODUCTOS QUE MOSTRAR</h5>
+    </div>
+</div>

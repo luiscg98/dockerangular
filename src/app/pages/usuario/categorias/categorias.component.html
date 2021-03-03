@@ -1,0 +1,12 @@
+<!--Imagenes Categorias-->
+<section>
+    <div class="container mt-2">
+        <div class="row row-cols-2 row-cols-md-5">
+            <div *ngFor="let item of categorias" class="col p-4 p-md-0 px-md-2">
+                <img (click)="ver(item.url2)" src="assets/img/{{item.imgm}}" class="img-fluid d-block d-md-none rounded shadow" alt="...">
+                <img (click)="ver(item.url2)" src="assets/img/{{item.img}}" class="img-fluid d-none d-md-block rounded shadow" alt="...">
+            </div>
+        </div>
+    </div>
+</section>
+<!--Imagenes Categorias-->

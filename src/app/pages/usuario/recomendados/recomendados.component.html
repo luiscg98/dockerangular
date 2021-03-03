@@ -1,0 +1,78 @@
+<section>
+    <div class="container mt-5 pt-4 mb-5 pb-3">
+        <div class="row pb-5">
+            <div class="col-12 text-center mb-lg-5">
+                <h5 class="text-uppercase fs-6 semibold">neko no kokoro</h5>
+                <h2>¡Lo más popular, lo más nuevo!</h2>
+                <div class="col-1 mx-auto pt-1">
+                    <hr/>
+                </div>
+
+            </div>
+            <div id="carouselRecomendados" class="carousel slide carousel-dark position-relative mt-2" data-ride="carousel">
+                <ol class="carousel-indicators position-absolute mx-auto top-100 pt-5 left-50 translate-middle">
+                    <li data-target="#carouselRecomendados" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselRecomendados" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-touch="true">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-5">
+                            <div *ngFor="let item of indexes" class="col p-2">
+                                <div class="card shadow-sm d-flex flex-row flex-md-column" style="">
+                                    <img src="assets/img/06.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nombre de Producto</h5>
+
+                                        <div class="row my-2">
+                                            <div class="col-6 col-md-7"><span class="precio">$250.00 MXN</span></div>
+                                            <div class="col-6 col-md-5 text-center">Quedan: <span class="stock">
+                                                2</span></div>
+                                        </div>
+
+                                        <p class="card-text">Descripción lorem ipsum dolor</p>
+
+                                        <div class="d-flex flex-md-row justify-content-around g-2">
+                                            <a href="#" class="btn btn-anime text-white btn-sm">Ordenar <i class="fas fa-money-bill-wave-alt ml-2"></i> </a>
+                                            <a href="#" class="btn btn-success text-white btn-sm">Agregar <i class="fas fa-shopping-basket ml-2"></i></a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-touch="true">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-5">
+                            <div *ngFor="let item of indexes" class="col p-2">
+                                <div class="card shadow-sm d-flex flex-row flex-md-column" style="">
+                                    <img src="assets/img/06.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nombre de Producto</h5>
+
+                                        <div class="row my-2">
+                                            <div class="col-6 col-md-7"><span class="precio">$250.00 MXN</span></div>
+                                            <div class="col-6 col-md-5 text-center">Quedan: <span class="stock">
+                                            2</span></div>
+                                        </div>
+
+                                        <p class="card-text">Descripción lorem ipsum dolor</p>
+
+                                        <div class="d-flex flex-md-row justify-content-around g-2">
+                                            <a href="#" class="btn btn-anime text-white btn-sm">Ordenar <i class="fas fa-money-bill-wave-alt ml-2"></i> </a>
+                                            <a href="#" class="btn btn-success text-white btn-sm">Agregar <i class="fas fa-shopping-basket ml-2"></i></a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

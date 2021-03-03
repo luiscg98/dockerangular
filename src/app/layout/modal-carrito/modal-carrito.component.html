@@ -1,0 +1,22 @@
+<div class="modal fade" id="carrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div *ngIf="flag==0">
+                    NO HAS AGREGADO NADA A TU CARRITO
+                </div>
+                <div *ngIf="flag==1">
+                    Mostramos carrito
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-anime text-white">Procesar</button>
+            </div>
+        </div>
+    </div>
+</div>

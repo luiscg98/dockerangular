@@ -1,0 +1,45 @@
+.navbar li{
+  font-size: 1rem;
+}
+
+.navbar{
+  color: black;
+}
+
+.dropdown-item{
+  background: transparent;
+}
+
+.navbar-nav.main .nav-item {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color,
+    background-color;
+    transition-property: color,background-color;
+}
+.navbar-nav.main .nav-item:hover {
+  background-color: white;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color,
+  background-color;
+  transition-property: color,background-color;
+}
+
+.navbar-nav.main .nav-item a {
+  color: white;
+}
+
+.navbar-nav.main .nav-item:hover a {
+  color: #f1aabb;
+}
+
+.info{
+  color: black;
+  text-decoration: none;
+}
+
+.secondary a, .secondary span{
+  color: rgb(119, 119, 119);
+  font-size: 0.84rem;
+}

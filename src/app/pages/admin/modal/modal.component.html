@@ -1,0 +1,67 @@
+<div class="modal fade" id="producto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edicion de Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div class="row my-2">
+                        <div class="col-6 d-flex">
+                            <div class="d-flex flex-column">
+                                Nombre:
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <input #ne type="text" class="form-control" aria-describedby="nombre">
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-6 d-flex">
+                            <div class="d-flex flex-column">
+                                Descripcion:
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <input #de type="text" class="form-control" aria-describedby="descripcion">
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-6 d-flex">
+                            <div class="d-flex flex-row">
+                                Stock:
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <input #se type="text" class="form-control" aria-describedby="stock">
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-6 d-flex">
+                            <div class="d-flex flex-row">
+                                Precio:
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <input #pe type="text" class="form-control" aria-describedby="precio">
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-6 d-flex">
+                            <div class="d-flex flex-row">
+                                Categoria:
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <input #ce type="text" class="form-control" aria-describedby="categoria">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button (click)="editar(ne.value,de.value,ce.value,pe.value,se.value); $event.preventDefault();" type="button" class="btn btn-anime" data-bs-dismiss="modal">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
