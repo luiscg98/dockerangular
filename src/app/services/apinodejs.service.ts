@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-const URLDEV = 'https://nekonokokoroapi.herokuapp.com/';
-//const URLDEV = 'http://localhost:3000/';
+//const URLDEV = 'https://nekonokokoroapi.herokuapp.com/';
+const URLDEV = 'http://localhost:3000/';
 
 @Injectable({
   providedIn: 'root'
