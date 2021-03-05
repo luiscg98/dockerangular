@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 //const URLDEV = 'https://apicoremtwdmproyecto.azurewebsites.net/api/';
-const URLDEV = 'http://192.168.1.65:5000/api/';
-
+const URLDEV = 'http://apinetcore.midominio.com/api/';
 @Injectable({
   providedIn: 'root'
 })

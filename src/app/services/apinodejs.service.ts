@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 //const URLDEV = 'https://nekonokokoroapi.herokuapp.com/';
-const URLDEV = 'http://192.168.1.65:3000/';
+const URLDEV = 'http://apinode.midominio.com/';
 
 @Injectable({
   providedIn: 'root'
